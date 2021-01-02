@@ -84,7 +84,7 @@ input{
     padding: 5px 10px;
     outline: none;
     font-family: var(--secondary-font);
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: var(--primary-color);
     display: flex;
     justify-content: center;
@@ -99,7 +99,7 @@ button{
     padding: 1rem 2rem;
     color: var(--body-color);
     font-family: var(--primary-font);
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 600;
     outline: none;
     position: relative;
