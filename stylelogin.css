@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --dark-color:#3b6978;
+    --primary-color: #58899a;
+    --secondary-color:#fb7813;
+    --body-color: #fff;
+    --max-width:1300px;
+    --main-font:'Montserrat';
+    --secondary-font:'Poppins';
+    --gambar-satu:url(gambar/background.png);
+}
+
+body{
+    background-image: var(--gambar-satu);
+    background-size: cover;
+    background-position: bottom;
+    color: var(--body-color);
+    max-width: var(--max-width);
+    height: 100vh;
+    font-family: var(--main-font);
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 2fr;
+    padding: 30px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flec-start;
+    align-items: center;
+}
+
+.card .garis{
+    background-color: var(--body-color);
+    height: 5px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.card form{
+    width: 350px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(3, 1fr);
+    z-index: 100;
+    
+}
+.card form input{
+    border: none;
+    border-radius:20px;
+    margin:10px;
+    font-family: var(--secondary-font);
+    padding: 10px 30px;
+    outline: none;
+    
+    transition: 300ms;
+}
+
+.card form button{
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius:20px;
+    margin:10px;
+    font-family: var(--secondary-font);
+    padding: 10px 30px;
+    outline: none;
+    transition: 300ms;
+}
+
+.bayangan{
+    background-color: black;
+    width: 200px;
+    height: 30px;
+    border-radius:50px;
+    margin:30px;
+    transform: translateY(-180px);
+    filter: blur(12px);
+    opacity: 30%;
+}
+
+.help{
+    position:fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+.help:hover{
+    transition: 300ms;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+input:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.bayangan:hover{
+    transition: 300ms;
+    transform: translateY(-2px);
+}
+
+/* ===responsive=== */
+
+@media screen and (min-width:768px){
+    body{
+        height: 100vh;
+    }
+}

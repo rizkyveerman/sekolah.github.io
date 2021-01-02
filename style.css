@@ -1,0 +1,712 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+--dark-color:#3b6978;
+--primary-color: #58899a;
+--secondary-color:#fb7813;
+--dark-secondary-color:#e06404;
+--body-color: #fff;
+--max-width:1300px;
+--primary-font:'Montserrat';
+--secondary-font:'Poppins';
+}
+
+#kenalan, #visimisi, #middle{
+width: 100%;
+padding: 10px 25px;
+position: relative;
+}
+
+ul li{
+list-style: none;
+}
+
+li{
+font-family: var(--secondary-font);
+}
+
+a{
+text-decoration: none;
+color: var(--primary-color);
+font-family: var(--secondary-font);
+}
+
+button{
+border: none;
+padding: 10px 30px;
+font-family: var(--secondary-font);
+color: white;
+background-color:var(--secondary-color);
+outline: none;
+cursor: pointer;
+transition: 300ms;
+}
+
+ul{
+display: flex;
+}
+
+p{
+font-family: var(--secondary-font);
+}
+
+h1, h2, h3, h4, h5, h6{
+font-family: var(--primary-font);
+color: var(--dark-color);
+}
+
+
+nav{
+width: 100%;
+height: 70px;
+display: grid;
+justify-content: center;
+align-items:center;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr;
+color: var(--primary-color);
+text-align: center;
+padding: 0 30px;
+box-shadow: 4px 0 4px rgba(0, 0, 0, .3);
+background-color: var(--body-color);
+z-index: 100;
+position: fixed;
+}
+
+nav .menu{
+display: none;
+}
+
+.hero{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.hero .hero-txt{
+order: 2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.hero .hero-txt h1{
+font-size: 20px;
+}
+
+.hero-img{
+width: 100%;
+height: 350px;
+background-image: url(gambar/hero.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.garis{
+background-color: var(--dark-color);
+width: 50px;
+height: 3px;
+}
+
+.visimisi, .middle{
+max-width:100%;
+height: auto;
+padding: 0 30px;
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+}
+.kenalan{
+display: flex;
+flex-direction: column;
+align-items:center;
+}
+
+
+.kenalan p{
+color: var(--dark-color);
+margin-top: 20px;
+}
+
+.kenalan h1{
+text-align: center;
+}
+
+.card{
+background-color: var(--secondary-color);
+width: 350px;
+height: 150px;
+border-radius: 10px;
+display: flex;
+color: var(--body-color);
+justify-content: space-evenly;
+align-items:center;
+margin: 20px 0 0 0;
+position: relative;
+transition:300ms;
+transition-delay: 0s;
+box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+
+.card .satu{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width:20%;
+height: 70%;
+transition:300ms;
+transition-delay: 0s;
+}
+
+.card .satu:hover{
+border-bottom: solid 3px white;
+cursor: pointer;
+transform: translateY(-10px);
+}
+
+.card .garis-tengah{
+width: 2px;
+height: 70%;
+background-color: var(--body-color);
+}
+
+.card h2{
+font-size: 36px;
+}
+
+.card p, .card h2{
+margin: 0px 0;
+color: var(--body-color);
+}
+
+.card:hover{
+cursor: pointer;
+}
+
+.visimisi p, .visimisi ol{
+text-align: left;
+margin-top: 10px;
+}
+
+.visi .visi-text, .misi .misi-text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.visi img, .misi img{
+display: none;
+}
+
+.hero2{
+color: var(--body-color);
+background-color: var(--dark-color);
+border-radius: 20px;
+padding: 25px;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.hero2 h1{
+color: var(--body-color);
+}
+.hero2 .hero2-text div{
+background-color: var(--body-color);
+}
+
+
+.hero2-img{
+border-radius: 10px;
+background-image: url(gambar/hero2.jpg);
+width: 100%;
+height: 250px;
+background-repeat: no-repeat;
+background-size: cover;
+order: 1;
+box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+
+.hero2 .hero2-text{
+order: 2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.hero .hero-txt button a{
+    background-color: none;
+    color: var(--body-color);
+}
+
+.middle h1{
+margin-top: 25px;
+}
+
+.middle p{
+margin-top: 25px;
+text-align: center;
+}
+
+
+.gallery{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.gallery .img1{
+background-image: url(gambar/airfocus-K_VeavYEfdA-unsplash.jpg);
+}
+.gallery .img2{
+background-image: url(gambar/akson-1K8pIbIrhkQ-unsplash.jpg);
+}
+.gallery .img3{
+background-image: url(gambar/daniel-plemott-gsxW8kiuYzc-unsplash.jpg);
+}
+.gallery .img4{
+background-image: url(gambar/jon-tyson-kGUmNEYaSMY-unsplash.jpg);
+}
+.gallery .img5{
+background-image: url(gambar/nastya-dulhiier-NC6dc0CgXbc-unsplash.jpg);
+}
+
+.gallery .img1, .gallery .img2, .gallery .img3, 
+.gallery .img4, .gallery .img5{
+background-size: cover;
+background-position: center;
+width: 430px;
+height: 300px;
+transition:300ms;
+margin: 15px 0;
+background-color: grey;
+}
+
+.gallery .img:hover{
+cursor: pointer;
+transform: scale(1.10);
+}
+
+
+.middle button{
+width: 100%;
+margin-top: 15px;
+border: solid 1px var(--primary-color);
+padding: 10px 30px;
+font-family: var(--secondary-font);
+color: var(--dark-color);
+background-color: #fff;
+}
+.events{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+}
+
+.event-card, .event-card2, .event-card3{
+margin: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 300px;
+height: 350px;
+background-color: var(--body-color);
+box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+padding: 25px 25px 0 25px;
+}
+
+.event-card .cover{
+width: 250px;
+height: 250px;
+background-image: url(gambar/event1.jpg);
+background-size: cover;
+box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+.event-card .caption, .event-card2 .caption, .event-card3 .caption{
+padding: 20px 0 25px 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: left;
+}
+
+.event-card .caption h1, .event-card .caption p,
+.event-card2 .caption h1, .event-card2 .caption p,
+.event-card3 .caption h1, .event-card3 .caption p{
+margin: 0;
+}
+
+.event-card .caption p{
+font-size: 14px;
+}
+
+.event-card2 .cover{
+width: 250px;
+height: 250px;
+background-image: url(gambar/event2.jpg);
+background-size: cover;
+box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+
+.event-card3 .cover{
+width: 250px;
+height: 250px;
+background-image: url(gambar/event3.jpg);
+background-size: cover;
+box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+
+.subfooter{
+margin-top: 15px;
+padding: 25px;
+background-color: var(--dark-color);
+color: var(--body-color);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+button:hover{
+background-color: var(--dark-secondary-color);
+}
+
+.subfooter h1, .subfooter h3, .subfooter a{
+color: var(--body-color);
+}
+
+.footer-f{
+background-color: var(--primary-color);
+padding: 20px;
+color: var(--body-color);
+text-align: center;
+}
+
+/*responsive*/
+
+@media screen and (min-width:768px){
+
+nav{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    z-index: 100;
+}
+
+nav .logo{
+    flex-grow: 2;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+nav .menu{
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .menu ul{
+    margin: 10px;
+}
+
+
+nav .menu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 0px;
+    padding:0 10px;
+    width: 100%;
+    border: none;
+    position: relative;
+    color: var(--primary-color);
+    z-index: 100;
+    overflow: hidden;
+    transition: 300ms;
+    border: solid 3px var(--body-color);
+}
+
+nav .menu ul li a{
+    padding: 10px 20px;
+}
+
+nav .menu ul li::before{
+    position: absolute;
+    display: block;
+    content: ' ';
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    background-color: var(--body-color);
+    z-index: -1;
+    border: solid 2px var(--body-color);
+}
+nav .menu ul li::after{
+    content: ' ';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--primary-color);
+    z-index: -2;
+    border: none;
+    transform: rotate(90deg);
+    transition: 300ms;
+}
+
+nav .menu ul li:hover::after{
+    position: absolute;
+    display: block;
+    transform: rotate(0deg);
+    background-color: var(--secondary-color);
+}
+
+
+nav .menu button a{
+    color: var(--body-color);
+}
+
+.hero{
+    position: relative;
+    height: 600px;
+    background-image: url(gambar/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.hero .hero-txt{
+    width:100%;
+    height: 100%;
+    background-image: linear-gradient(to top,
+    rgba(0, 0, 0, .5),
+    rgba(0, 0, 0, .3));
+    position: absolute;
+    bottom: 0px;
+}
+
+.hero .hero-txt p{
+    font-size: 20px;
+}
+
+.hero .hero-txt h1{
+    font-size: 36px;
+}
+
+.hero .hero-txt button a{
+    background-color: none;
+    color: var(--body-color);
+}
+
+.hero .hero-txt p, .hero .hero-txt h1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, .7);
+color:var(--body-color);
+}
+
+.hero-img{
+    display: none;
+    }
+.card{
+    position: absolute;
+    bottom:-50px;
+    width: 600px;
+}
+
+.visimisi{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.visi, .misi{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.visi img, .misi img{
+    
+    padding: 25px;
+    display: inline-block;
+    width: 50%;
+    height: auto;
+}
+
+.visi .visi-text, .misi .misi-text{
+    padding: 25px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.visi .visi-text p, .misi .misi-text p{
+    text-align: left;
+}
+
+.misi img{
+    order: 2;
+}
+
+.misi .misi-text{
+    order: 1;
+}
+
+.hero2{
+    color: var(--body-color);
+    background-color: var(--dark-color);
+    border-radius: 20px;
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+
+.hero2 h1{
+    color: var(--body-color);
+}
+.hero2 .hero2-text div{
+    background-color: var(--body-color);
+}
+
+
+.hero2-img{
+    
+    padding: 25px;
+    border-radius: 10px;
+    background-image: url(gambar/hero2.jpg);
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+}
+
+.hero2 .hero2-text{
+    padding: 25px;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero2 .hero2-text h1, .hero2 .hero2-text p{
+    text-align: left;
+}
+
+.hero2:hover{
+    cursor: pointer;
+}
+
+.gallery, .events{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gallery .img1, .gallery .img2, .gallery .img3, 
+.gallery .img4, .gallery .img5{
+    background-size: cover;
+    background-position: center;
+    width: 395px;
+    height: 250px;
+    transition:300ms;
+    margin: 15px 15px;
+    background-color: grey;
+}
+
+.img-seemore{
+    width: 395px;
+    height: 250px;
+    transition:300ms;
+    margin: 15px 15px;
+    background-color: #fff;
+    /* border: solid 2px var(--primary-color); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery  .img-seemore  .img-btn{
+    width: auto;
+    padding:1rem 2rem;
+    border: none;
+    position: relative;
+    color: var(--primary-color);
+    z-index: 100;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.gallery  .img-seemore  .img-btn::before{
+    position: absolute;
+    display: block;
+    content: ' ';
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    background-color: var(--body-color);
+    z-index: -1;
+    border: solid 2px var(--body-color);
+}
+
+
+.gallery  .img-seemore  .img-btn::after{
+    
+    content: ' ';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--primary-color);
+    z-index: -2;
+    border: none;
+    transform: rotate(90deg);
+    transition: 300ms;
+}
+
+.gallery  .img-seemore  .img-btn:hover::after{
+    position: absolute;
+    display: block;
+    transform: rotate(0deg);
+    background-color: var(--primary-color);
+}
+
+.gallery  .img-seemore  .img-btn:hover{
+    background-color: #fff;
+}
+
+.seemore{
+    display: none;
+}
+
+
+
+}
