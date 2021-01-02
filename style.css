@@ -15,6 +15,31 @@ box-sizing: border-box;
 --secondary-font:'Poppins';
 }
 
+.masuk-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-color);
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+}
+
+.masuk-btn a{
+    position: absolute;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--body-color);
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+}
+
 body{
     width: 100%;
 }
@@ -738,6 +763,8 @@ color:var(--body-color);
     display: flex;
 }
 
-
+.masuk-btn{
+    display:none
+}
 
 }
