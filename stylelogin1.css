@@ -70,7 +70,7 @@ a:active{
     flex-direction: column;
     justify-content: space-evenly;
     justify-self: center;
-    margin: 5px;
+    margin: 15px;
     align-self: center;
     text-decoration: none;
 }
