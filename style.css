@@ -81,6 +81,7 @@ display: flex;
 
 p{
 font-family: var(--secondary-font);
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -233,6 +234,7 @@ cursor: pointer;
 .visimisi p, .visimisi ol{
 text-align: left;
 margin-top: 10px;
+    line-height: 1.6;
 }
 
 .visi .visi-text, .misi .misi-text{
